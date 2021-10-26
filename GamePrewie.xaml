@@ -1,0 +1,40 @@
+﻿<Page x:Class="Games2.GamePrewie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Games2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GamePrewie">
+
+    <Grid>
+        <ListView Grid.Row="1" Name="LViewGame">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="20" Width="400">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Width="400" Grid.Row="1" Stretch="UniformToFill" HorizontalAlignment="Center" Margin="5">
+                            <Image.Source>
+                                <Binding Path="ImagePrewiew">
+                                    <Binding.TargetNullValue>
+                                        <ImageSource>Resourses/nopicture.png</ImageSource>
+                                    </Binding.TargetNullValue>
+                                </Binding>
+                            </Image.Source>
+                        </Image>
+                        <TextBlock Text="{Binding GameName}" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" 
+                                   HorizontalAlignment="Center" Margin="5 5" FontSize="26" Grid.Row="0"/>
+                        <TextBlock Text="{Binding Price}" Grid.Row="1" Margin="5 5 5 15" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding ReleaseDate}" Grid.Row="2" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Mode}" Grid.Row="3" HorizontalAlignment="Right" />
+                        <TextBlock Text="{Binding Status}" Grid.Row="4" HorizontalAlignment="Left" />
+                        
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

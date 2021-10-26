@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="07b8d006d1514844b438d1e844e2b25f" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="Games2Model.Developer" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.Game" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.GameImage" Width="1.5" PointX="7.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.Genre" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.Publisher" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.Rating" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.User" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Games2Model.UserStatus" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="Games2Model.FK_Game_Developer" ManuallyRouted="false" />
+        <AssociationConnector Association="Games2Model.FK_Game_Genre" ManuallyRouted="false" />
+        <AssociationConnector Association="Games2Model.FK_Game_Publisher" ManuallyRouted="false" />
+        <AssociationConnector Association="Games2Model.FK_Game_Rating" ManuallyRouted="false" />
+        <AssociationConnector Association="Games2Model.FK_GameImage_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="Games2Model.FK_Rating_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Games2Model.FK_UserStatus_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
